@@ -1,8 +1,9 @@
+import Sports from "@/components/ui/home/Sports";
 
 const Homepage = () => {
   return(
     <div>
-       <p> Welcome to page part </p>
+       <Sports/>
     </div>
   )
 }
