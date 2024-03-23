@@ -1,0 +1,31 @@
+[
+    {
+      "_id": 1,
+      "image": "https://i.ibb.co/fMVw7MR/395319316-1098948761258832-1320994362450036961-n-1.png",
+      "title": "Sacramento River Cats",
+      "events": 48,
+      "sports": "Baseball"
+    },
+    {
+      "_id": 2,
+      "image": "https://i.ibb.co/CsXTWdn/370265821-812394460893172-8391088016650457893-n-1.png",
+      "title": "Las Vegas Aviators",
+      "events":  28,
+      "sports": "Baseball"
+    },
+    {
+      "_id": 3,
+      "image": "https://i.ibb.co/8K91sff/277307281-10158751675643224-148609460173032344-n.png",
+      "title": "New Jersey Devils",
+      "events": 15,
+      "sports": "Ice Hockey"
+    },
+    {
+      "_id": 4,
+      "image": "https://i.ibb.co/CsXTWdn/370265821-812394460893172-8391088016650457893-n-1.png",
+      "title": "Las Vegas Aviators",
+      "events": 28,
+      "sports": "Baseball"
+    }
+  ]
+  
