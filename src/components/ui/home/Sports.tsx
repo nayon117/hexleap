@@ -32,10 +32,9 @@ const Sports = () => {
     <div className="section-container py-6">
       <div className="flex justify-between items-center">
         <h1 className="font-semibold border-b-2 border-black">Sports</h1>
-        <h2>Light</h2>
       </div>
    
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-6">
           {sportsData.map((sport) => (
             <div
               key={sport._id}
@@ -43,19 +42,19 @@ const Sports = () => {
             >
               <Image alt="card" width={300} height={200} src={sport.image} />
               <div>
-                <h1 className="text-lg font-semibold ">{sport.title}</h1>
-                <div className="flex items-center justify-between">
-                  <div className="flex flex-col">
+                <h1 className="text-base font-semibold lg:whitespace-nowrap ">{sport.title}</h1>
+                <div className="flex items-center justify-between bg-base-200 p-1">
+                  <div className="flex flex-col ">
                     <p className="text-sm text-gray-500 dark:text-gray-400">
-                      Events
+                     Total Events
                     </p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       {sport.events} Events
                     </p>
                   </div>
                   <div className="flex flex-col">
-                    <p className=" text-gray-500 dark:text-gray-400">sport</p>
-                    <p className=" text-gray-500 dark:text-gray-400">
+                    <p className="text-center text-gray-500 dark:text-gray-400">sport</p>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
                       {sport.sports}
                     </p>
                   </div>
@@ -63,21 +62,17 @@ const Sports = () => {
               </div>
             </div>
           ))}
-          <div>
-            <Image
-              alt="card"
-              width={200}
-              height={200}
-              src="https://i.ibb.co/KL5rwtX/unnamed-1-1.png"
-            />
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quas
-              illum dignissimos laboriosam veritatis saepe at ratione labore ad
-              ullam.
-            </p>
-        </div>   
+          <div
+              className=" space-y-4 rounded-lg  p-6 shadow-lg  bg-white"
+            >
+              <Image alt="card" width={300} height={200} src="https://i.ibb.co/KL5rwtX/unnamed-1-1.png" />
+              <div>
+                 <h1 className="text-base font-semibold lg:whitespace-nowrap">Advertisement title</h1>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.  </p>
+              </div>
+            </div>  
       </div>
-     <div className="text-center mt-6">
+     <div className="text-center mt-10">
      <button className="bg-blue-500 text-white px-2 py-1">See More</button>
      </div>
     </div>

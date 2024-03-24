@@ -1,24 +1,23 @@
 [
-    {
-      "_id": 1,
-      "image": "https://i.ibb.co/8rccr0M/Ticket-Mockup-3.png",
-      "title": "Las Vegas Aviators",
-      "description": "Las Vegas Ballpark, Las Vegas, Nevada",
-      "button_text": "Take Flight Collection"
-    },
-    {
-      "_id": 2,
-      "image": "https://i.ibb.co/27NLWLr/unnamed-1.png",
-      "title": "Sacramento River Cats",
-      "description": "Sutter Health Park, Sacramento, California",
-      "button_text": "Orange Collection"
-    },
-    {
-      "_id": 3,
-      "image": "https://i.ibb.co/8rccr0M/Ticket-Mockup-3.png",
-      "title": "Baseball Skills Clinic",
-      "description": "Las Vegas Ballpark, Las Vegas, Nevada",
-      "button_text": "Take Flight Collection"
-    }
-  ]
-  
+  {
+    "_id": 1,
+    "image": "https://i.ibb.co/8rccr0M/Ticket-Mockup-3.png",
+    "title": "Las Vegas Aviators",
+    "description": "Las Vegas Ballpark, Las Vegas,\n Nevada",
+    "button_text": "Take Flight Collection"
+  },
+  {
+    "_id": 2,
+    "image": "https://i.ibb.co/27NLWLr/unnamed-1.png",
+    "title": "Sacramento River Cats",
+    "description": "Sutter Health Park, Sacramento,\n California",
+    "button_text": "Orange Collection"
+  },
+  {
+    "_id": 3,
+    "image": "https://i.ibb.co/8rccr0M/Ticket-Mockup-3.png",
+    "title": "Baseball Skills Clinic",
+    "description": "Las Vegas Ballpark, Las Vegas,\n Nevada",
+    "button_text": "Take Flight Collection"
+  }
+]
