@@ -26,7 +26,7 @@ const Sports = () => {
     fetchData();
   }, []);
 
-  console.log(sportsData);
+  // console.log(sportsData);
 
   return (
     <div className="section-container py-6">
