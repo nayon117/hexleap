@@ -4,7 +4,8 @@ import { IoMenuSharp } from "react-icons/io5";
 
 const Navbar = () => {
   const [theme, setTheme] = useState<"light" | "dark">(
-    localStorage.getItem("theme") === "dark" ? "dark" : "light"
+    // Check if localStorage is available, if not, default to "light" theme
+    typeof localStorage !== "undefined" && localStorage.getItem("theme") === "dark" ? "dark" : "light"
   );
 
   const handleToggle = () => {
@@ -13,8 +14,11 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    localStorage.setItem("theme", theme);
-    document.documentElement.setAttribute("data-theme", theme);
+    // Check if localStorage is available before using it
+    if (typeof localStorage !== "undefined") {
+      localStorage.setItem("theme", theme);
+      document.documentElement.setAttribute("data-theme", theme);
+    }
   }, [theme]);
 
   const navLinks = (
@@ -56,7 +60,8 @@ const Navbar = () => {
             onChange={handleToggle}
             checked={theme === "dark"}
           />
-           <svg
+            {/* sun icon */}
+          <svg
             className="swap-on fill-current w-8 h-8"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"

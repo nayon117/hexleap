@@ -38,7 +38,7 @@ const Sports = () => {
           {sportsData.map((sport) => (
             <div
               key={sport._id}
-              className=" space-y-4 rounded-lg  p-6 shadow-lg  bg-white"
+              className=" space-y-4 rounded-lg  p-6 shadow-lg "
             >
               <Image alt="card" width={300} height={200} src={sport.image} />
               <div>
@@ -63,12 +63,15 @@ const Sports = () => {
             </div>
           ))}
           <div
-              className=" space-y-4 rounded-lg  p-6 shadow-lg  bg-white"
+              className=" space-y-4 rounded-lg  p-6 shadow-lg"
             >
-              <Image alt="card" width={300} height={200} src="https://i.ibb.co/KL5rwtX/unnamed-1-1.png" />
+            <div className="relative">
+            <Image alt="card" width={300} height={200} src="https://i.ibb.co/KL5rwtX/unnamed-1-1.png" />
+              <p className="px-2 bg-black text-white absolute top-0 right-0">Ad</p>
+            </div>
               <div>
                  <h1 className="text-base font-semibold lg:whitespace-nowrap">Advertisement title</h1>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.  </p>
+                 <p className="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.  </p>
               </div>
             </div>  
       </div>
